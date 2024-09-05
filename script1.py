@@ -21,7 +21,8 @@ calcTotal(price,thetax,myname)
 list1 = [1,'two',3.2,'four',5]
 
 for i in list1:
-    print(0,2,4)
+    if type (i) ==int:
+        print(i)
 
 
 
@@ -49,8 +50,8 @@ data = [{
     'marker': {'size':10,}
     }]
 
-my_layout = Layout(title='Baylor University',geo_scope='usa')
+my_layout = Layout(title ='Baylor University',geo_scope ='usa')
 
 fig = {'data':data, 'layout':my_layout}
 
-offline.plot(fig,filename='Baylor.html')
+offline.plot(fig,filename ='Baylor.html')
